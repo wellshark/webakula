@@ -30,7 +30,7 @@
   font-weight: 400;
   font-style: normal; }
 * {
-  font-family: Arial, sans-serif;
+  font-family: Arial;
   font-weight: 700; }
 
 html {
@@ -121,7 +121,7 @@ button:active, button:focus {
   .contacts__item-icon {
     margin-right: 12px; }
   .contacts__number-span {
-    font-family: Fira Sans Light, sans-serif;
+    font-family: Fira Sans Light;
     font-weight: 100; }
   .contacts__number-link {
     color: #eeeeee;
