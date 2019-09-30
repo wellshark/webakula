@@ -3,8 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <title>Webakula</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/owlcarousel/owl.carousel.min.css">
+    <!--<link rel="stylesheet" href="css/owlcarousel/owl.theme.default.min.css">-->
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
+<header class="header">
+    <div class="owl-carousel owl-theme">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+    <div class="navbar-wrap">
+        <div class="container">
+            <div class="logo">
+                <img src="img/logo.png" alt="logo">
+            </div>
+            <div class="contacts">
+                <div class="contacts__item">
+                    <img class="contacts__item-icon" src="img/location.png" alt="location">
+                    <span>г. Харьков, ул. Мироносицкая 10а</span>
+                </div>
+                <div class="contacts__item">
+                    <img class="contacts__item-icon" src="img/phone.png" alt="phone">
+                    <span class="contacts__number-span">
+                        <a href="tel:+380999908100" class="contacts__number-link">+38 (099) 990-81-00</a>  (viber, telegram)
+                    </span>
+                </div>
+                <div class="contacts__item">
+                    <a href="#" class="contacts__icon"><img src="img/fb_icon.png" alt="fb"></a>
+                </div>
+                <div class="contacts__item">
+                    <a href="#" class="contacts__icon"><img src="img/instagram_icon.png" alt="instagram"></a>
+                </div>
+            </div>
+            <div class="top-navbar">
 
+                <!--<button class="menu-button">-->
+                <!--<span class="menu-button__line"></span>-->
+                <!--<span class="menu-button__line"></span>-->
+                <!--<span class="menu-button__line"></span>-->
+                <!--</button>-->
+                <ul class="navigation header__nav">
+                    <li class="navigation__link-wrap"><a href="#"
+                                                         class="navigation__link navigation_black-link">Главная</a>
+                    </li>
+                    <li class="navigation__link-wrap"><a href="#"
+                                                         class="navigation__link navigation_black-link">Туры</a>
+                    </li>
+                    <li class="navigation__link-wrap"><a href="#"
+                                                         class="navigation__link navigation_black-link">Страны</a>
+                    </li>
+                    <li class="navigation__link-wrap"><a href="#"
+                                                         class="navigation__link navigation_black-link">Услуги</a>
+                    </li>
+                    <li class="navigation__link-wrap"><a href="#" class="navigation__link navigation_black-link">О
+                        компании</a></li>
+                    <li class="navigation__link-wrap"><a href="#"
+                                                         class="navigation__link navigation_black-link">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- /.header-wrap -->
+    <div class="offer-wrap">
+        <div class="offer-background  offer-wrap__height">
+        </div>
+    </div>
+    <div class="offer-wrap">
+        <div class="container offer-wrap__height">
+            <div class="offer offer-wrap__height">
+                <h1 class="offer__text">Лучшие предложения по солнечному Египту из Харькова</h1>
+                <button class="button">Получить предложение</button>
+            </div>
+        </div>
+
+    </div>
+</header>
+
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/owlcarousel/owl.carousel.js"></script>
+<script>
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+//        margin: 10,
+        nav: false,
+//        dots:false,
+        responsive: {
+            0: {
+                items: 1
+            }
+        }
+    })
+</script>
 </body>
 </html>
