@@ -21,13 +21,7 @@
   font-family: "Fira Sans Light";
   src: url("../fonts/FiraSansLight.eot");
   src: url("../fonts/FiraSansLight.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraSansLight.woff") format("woff"), url("../fonts/FiraSansLight.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: "FiraSans";
-  src: url("../fonts/FiraSans.eot");
-  src: url("../fonts/FiraSans.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraSans.woff") format("woff"), url("../fonts/FiraSans.ttf") format("truetype");
-  font-weight: 400;
+  font-weight: 700;
   font-style: normal; }
 * {
   font-family: Arial;
@@ -134,8 +128,7 @@ button:active, button:focus {
   display: flex;
   align-items: center;
   border-radius: 10px;
-  background-color: #fbd341;
-  padding: 13px 0; }
+  background-color: #fbd341; }
 
 .navbar-wrap {
   position: absolute;
@@ -150,12 +143,50 @@ button:active, button:focus {
 .navigation {
   list-style-type: none;
   padding-left: 0;
-  margin: 0; }
+  margin: 0;
+  position: relative; }
   .navigation_black-link {
     color: #000;
-    margin: 0 20px; }
+    display: block;
+    padding: 13px 20px; }
+  .navigation_white-link {
+    color: #FFFFFF;
+    font-weight: 100;
+    margin: 18px 0;
+    display: block; }
   .navigation__link {
     text-decoration: none; }
+  .navigation__submenu {
+    position: absolute;
+    box-shadow: -1px 4px 15px 1px rgba(0, 0, 0, 0.34);
+    background-color: rgba(51, 151, 226, 0.8);
+    font-size: 14px;
+    padding: 0 30px;
+    top: 46px;
+    z-index: 10;
+    max-width: 180px;
+    line-height: 18px; }
+  .navigation__link-wrap {
+    position: relative; }
+  .navigation__arrow-down {
+    position: absolute;
+    top: 19px;
+    right: 5px; }
+
+.header__nav li .navigation__arrow-down {
+  transition: all 0.3s ease; }
+
+.header__nav li:hover .navigation__arrow-down {
+  transform: rotate(180deg); }
+
+.header__nav li ul {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease; }
+
+.header__nav li:hover > ul {
+  visibility: visible;
+  opacity: 1; }
 
 .offer-wrap {
   position: absolute;
@@ -177,7 +208,7 @@ button:active, button:focus {
       width: 100%; } }
 
 .offer {
-  width: 70%;
+  width: 80%;
   display: flex;
   align-items: flex-start;
   flex-direction: column;

@@ -104,7 +104,6 @@ button:active, button:focus
     align-items: center
     border-radius: 10px
     background-color: $accent-yellow
-    padding: 13px 0
 
 .navbar-wrap
   position: absolute
@@ -121,12 +120,48 @@ button:active, button:focus
   list-style-type: none
   padding-left: 0
   margin: 0
+  position: relative
   &_black-link
     color: $black-text
-    margin: 0 20px
-
+    display: block
+    //margin: 0 20px
+    padding: 13px 20px
+  &_white-link
+    color: #FFFFFF
+    font-weight: 100
+    margin: 18px 0
+    display: block
   &__link
     text-decoration: none
+  &__submenu
+    position: absolute
+    box-shadow: -1px 4px 15px 1px rgba(0, 0, 0, 0.34)
+    background-color: rgba(#3397e2, 0.8)
+    font-size: 14px
+    padding: 0 30px
+    top: 46px
+    z-index: 10
+    max-width: 180px
+    line-height: 18px
+    //display: none
+  &__link-wrap
+    position: relative
+  &__arrow-down
+    position: absolute
+    top: 19px
+    right: 5px
+
+.header__nav li .navigation__arrow-down
+  transition: all 0.3s ease
+.header__nav li:hover .navigation__arrow-down
+  transform: rotate(180deg)
+.header__nav li ul
+  visibility: hidden
+  opacity: 0
+  transition: all 0.3s ease
+.header__nav li:hover > ul
+  visibility: visible
+  opacity: 1
 
 .offer-wrap
   position: absolute
@@ -146,7 +181,7 @@ button:active, button:focus
     width: 100%
 
 .offer
-  width: 70%
+  width: 80%
   display: flex
   align-items: flex-start
   flex-direction: column
