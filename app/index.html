@@ -12,10 +12,16 @@
 </head>
 <body>
 <header class="header">
-    <div class="owl-carousel owl-theme">
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
+    <div class="owl-carousel slider-1 owl-theme">
+        <div class="item">
+            <div class="owl-carousel__item-1"></div>
+        </div>
+        <div class="item">
+            <div class="owl-carousel__item-2"></div>
+        </div>
+        <div class="item">
+            <div class="owl-carousel__item-3"></div>
+        </div>
     </div>
     <div class="navbar-wrap">
         <div class="container">
@@ -42,18 +48,28 @@
             </div>
             <div class="top-navbar">
 
-                <!--<button class="menu-button">-->
-                <!--<span class="menu-button__line"></span>-->
-                <!--<span class="menu-button__line"></span>-->
-                <!--<span class="menu-button__line"></span>-->
-                <!--</button>-->
-                <ul class="navigation header__nav">
-                    <li class="navigation__link-wrap"><a href="#"
+                <div class="menu-button" id="menu-button">
+                    <svg class="ham hamRotate ham4" viewBox="0 0 100 100" width="80"
+                         onclick="this.classList.toggle('active')">
+                        <path
+                                class="line top"
+                                d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20"/>
+                        <path
+                                class="line middle"
+                                d="m 70,50 h -40"/>
+                        <path
+                                class="line bottom"
+                                d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20"/>
+                    </svg>
+                </div>
+                <ul class="navigation header__nav" id="navigation">
+                    <li class="navigation__link-wrap header_link-margin "><a href="#"
                                                          class="navigation__link navigation_black-link">Главная</a>
                     </li>
                     <li class="navigation__link-wrap"><a href="#"
-                                                         class="navigation__link navigation_black-link">Туры</a>
-                        <img class="navigation__arrow-down" src="img/angle-arrow-down.svg" width="10" height="10" alt="arrow-down">
+                                                         class="navigation__link navigation_black-link">Туры <i class="navigation__arrow-down"></i></a>
+                        <!--<img class="navigation__arrow-down" src="img/angle-arrow-down.svg" width="10" height="10"-->
+                             <!--alt="arrow-down">-->
                         <ul class="navigation__submenu navigation">
 
 
@@ -75,8 +91,10 @@
                                                          class="navigation__link navigation_black-link">Страны</a>
                     </li>
                     <li class="navigation__link-wrap"><a href="#"
-                                                         class="navigation__link navigation_black-link">Услуги</a>
-                        <img class="navigation__arrow-down" src="img/angle-arrow-down.svg" width="10" height="10" alt="arrow-down">
+                                                         class="navigation__link navigation_black-link">Услуги  <i class="navigation__arrow-down"></i></a>
+
+                        <!--<img class="navigation__arrow-down" src="img/angle-arrow-down.svg" width="10" height="10"-->
+                             <!--alt="arrow-down">-->
                         <ul class="navigation__submenu navigation">
                             <li class="navigation__sub-item"><a href="#" class="navigation__link navigation_white-link">Авиабилеты</a>
                             </li>
@@ -118,11 +136,23 @@
     </div>
 </header>
 
+<section class="our-tours">
+    <div class="our-tours__hot-tours">
+        <div class="owl-carousel slider-2 owl-theme">
+            <div class="item"></div>
+            <div class="item"><h4>2</h4></div>
+            <div class="item"><h4>3</h4></div>
+        </div>
+    </div>
+    <div class="our-tours__popular-tours">
 
+    </div>
+</section>
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/owlcarousel/owl.carousel.js"></script>
+<script src="js/js.js"></script>
 <script>
-    $('.owl-carousel').owlCarousel({
+    $('.slider-1').owlCarousel({
         loop: true,
 //        margin: 10,
         nav: false,
@@ -130,6 +160,22 @@
         responsive: {
             0: {
                 items: 1
+            }
+        }
+    });
+    $('.slider-2').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:3
             }
         }
     })
