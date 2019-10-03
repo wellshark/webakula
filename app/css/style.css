@@ -33,6 +33,11 @@ html {
     html {
       font-size: 70%; } }
 
+h1 {
+  font-size: 24px;
+  text-transform: uppercase;
+  margin: 0; }
+
 header .owl-carousel {
   position: static; }
 
@@ -478,5 +483,34 @@ header .owl-carousel button.owl-dot {
     cursor: pointer; }
     .our-tours__button_active {
       color: #fbd341; }
+
+.our-opportunities {
+  padding: 44px 0 75px;
+  background-color: #f8f7f7; }
+  .our-opportunities__img {
+    display: block;
+    width: 458px;
+    height: 316px;
+    flex-shrink: 0;
+    background: url("../img/opportunities.jpg") no-repeat center;
+    background-size: cover; }
+    @media (max-width: 992px) {
+      .our-opportunities__img {
+        width: 100%; } }
+  .our-opportunities__title {
+    margin-bottom: 50px; }
+  .our-opportunities__content {
+    display: flex;
+    align-items: center; }
+    @media (max-width: 992px) {
+      .our-opportunities__content {
+        flex-direction: column; } }
+  .our-opportunities__description {
+    font-size: 16px;
+    font-weight: 100;
+    padding-left: 4vw; }
+    @media (max-width: 992px) {
+      .our-opportunities__description {
+        padding: 0; } }
 
 /*# sourceMappingURL=style.css.map */
