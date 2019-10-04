@@ -1,0 +1,57 @@
+.offer
+  background: url("../img/offer_bg.jpg") no-repeat bottom
+  background-size: cover
+  padding-bottom: 40px
+  @media (max-width: 992px)
+    min-height: 100vh
+    padding: 0
+  &__wrap
+    @media (max-width: 992px)
+      height: 100vh
+
+  //  display: flex
+    //  flex-direction: column
+    //  justify-content: space-around
+  &__title
+    color: #FFFFFF
+    padding: 40px 0
+    //@media (max-width: 992px)
+    //  padding: 0
+  &__form
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 40px
+    background-color: rgba(#000000, 0.6)
+    @media (max-width: 992px)
+      //height: calc(100% - 103px)
+      flex-direction: column
+  &__form-wrap
+    @media (max-width: 992px)
+      height: calc(100% - 103px - 40px)
+      display: flex
+      flex-direction: column
+      justify-content: center
+  &__input-wrap
+    display: grid
+    grid-gap: 20px 30px
+    grid-template-columns: repeat(4, minmax(100px, 1fr))
+    padding-right: 30px
+    @media (max-width: 992px)
+      display: flex
+      flex-direction: column
+      margin-bottom: 20px
+      padding-right: 0
+  &__input
+    height: 25px
+    padding: 0 10px
+    background-color: rgba(0,0,0,0)
+    color: #e5e5e5
+    font-weight: 100
+    border: none
+    border-bottom: 1px solid rgba(255,255,255,0.4)
+    outline: none
+    &::placeholder
+      color: #e5e5e5
+    @media (max-width: 992px)
+      margin-bottom: 20px

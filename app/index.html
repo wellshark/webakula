@@ -129,8 +129,8 @@
     </div>
     <div class="offer-wrap">
         <div class="container offer-wrap__height">
-            <div class="offer offer-wrap__height">
-                <h1 class="offer__text">Лучшие предложения по солнечному Египту из Харькова</h1>
+            <div class="offer-wrap__info offer-wrap__height">
+                <h1 class="offer-wrap__text">Лучшие предложения по солнечному Египту из Харькова</h1>
                 <button class="button">Получить предложение</button>
             </div>
         </div>
@@ -297,18 +297,28 @@
     </div>
 </section>
 <section class="offer">
-    <h1 class="offer__title">ХОЧУ ПРЕДЛОЖЕНИЕ ПО ТУРУ</h1>
-    <form action="">
-        <input type="text">
-        <input type="email">
-        <input type="tel">
-        <select name="country" id="country">
-            <option value="Turkey">Турция</option>
-            <option value="Egypt">Египет</option>
-            <option value="Sri-Lanka">Шри-Ланка</option>
-            <option value="Dominican Republic">Доминикана</option>
-        </select>
-    </form>
+    <div class="container offer__wrap">
+        <h1 class="offer__title">ХОЧУ ПРЕДЛОЖЕНИЕ ПО ТУРУ</h1>
+        <div class="offer__form-wrap">
+            <form class="offer__form" action="">
+                <div class="offer__input-wrap">
+                    <input class="offer__input" placeholder="Имя" type="text" name="fullname">
+                    <input class="offer__input" placeholder="Email" type="email">
+                    <input class="offer__input" placeholder="Телефон" type="tel">
+                    <select class="offer__input" name="country" id="country">
+                        <option disabled selected>Страна тура</option>
+                        <option value="Turkey">Турция</option>
+                        <option value="Egypt">Египет</option>
+                        <option value="Sri-Lanka">Шри-Ланка</option>
+                        <option value="Dominican Republic">Доминикана</option>
+                    </select>
+                </div>
+                <input class="button" type="submit" value="Получить предложение">
+            </form>
+        </div>
+
+    </div>
+
 </section>
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/owlcarousel/owl.carousel.js"></script>

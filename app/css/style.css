@@ -23,10 +23,6 @@
   src: url("../fonts/FiraSansLight.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraSansLight.woff") format("woff"), url("../fonts/FiraSansLight.ttf") format("truetype");
   font-weight: 700;
   font-style: normal; }
-* {
-  font-family: Arial;
-  font-weight: 700; }
-
 html {
   font-size: 100%; }
   @media (max-width: 576px) {
@@ -37,6 +33,13 @@ h1 {
   font-size: 24px;
   text-transform: uppercase;
   margin: 0; }
+  @media (max-width: 576px) {
+    h1 {
+      font-size: 20px; } }
+
+* {
+  font-family: Arial;
+  font-weight: 700; }
 
 header .owl-carousel {
   position: static; }
@@ -325,6 +328,11 @@ header .owl-carousel button.owl-dot {
   top: 50vh; }
   .offer-wrap__height {
     height: 100%; }
+  .offer-wrap__text {
+    color: #ffffff;
+    font-size: 1.875rem;
+    margin: 0;
+    margin-bottom: 40px; }
   @media (max-width: 576px) {
     .offer-wrap {
       top: calc(50vh - 228px / 2); } }
@@ -337,28 +345,23 @@ header .owl-carousel button.owl-dot {
     .offer-background {
       width: 100%; } }
 
-.offer {
+.offer-wrap__info {
   width: 80%;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   justify-content: center; }
   @media (max-width: 576px) {
-    .offer {
+    .offer-wrap__info {
       width: 100%;
       text-align: center;
       align-items: center; } }
-  .offer__text {
-    color: #ffffff;
-    font-size: 1.875rem;
-    margin: 0; }
 
 .button {
   border: none;
   border-radius: 10px;
   background-color: #fbd341;
   padding: 15px 25px;
-  margin-top: 40px;
   cursor: pointer;
   font-size: 18px; }
   .button:hover {
@@ -512,5 +515,60 @@ header .owl-carousel button.owl-dot {
     @media (max-width: 992px) {
       .our-opportunities__description {
         padding: 0; } }
+
+.offer {
+  background: url("../img/offer_bg.jpg") no-repeat bottom;
+  background-size: cover;
+  padding-bottom: 40px; }
+  @media (max-width: 992px) {
+    .offer {
+      min-height: 100vh;
+      padding: 0; } }
+  @media (max-width: 992px) {
+    .offer__wrap {
+      height: 100vh; } }
+  .offer__title {
+    color: #FFFFFF;
+    padding: 40px 0; }
+  .offer__form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.6); }
+    @media (max-width: 992px) {
+      .offer__form {
+        flex-direction: column; } }
+  @media (max-width: 992px) {
+    .offer__form-wrap {
+      height: calc(100% - 103px - 40px);
+      display: flex;
+      flex-direction: column;
+      justify-content: center; } }
+  .offer__input-wrap {
+    display: grid;
+    grid-gap: 20px 30px;
+    grid-template-columns: repeat(4, minmax(100px, 1fr));
+    padding-right: 30px; }
+    @media (max-width: 992px) {
+      .offer__input-wrap {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        padding-right: 0; } }
+  .offer__input {
+    height: 25px;
+    padding: 0 10px;
+    background-color: rgba(0, 0, 0, 0);
+    color: #e5e5e5;
+    font-weight: 100;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    outline: none; }
+    .offer__input::placeholder {
+      color: #e5e5e5; }
+    @media (max-width: 992px) {
+      .offer__input {
+        margin-bottom: 20px; } }
 
 /*# sourceMappingURL=style.css.map */
