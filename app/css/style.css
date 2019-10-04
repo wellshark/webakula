@@ -359,6 +359,7 @@ header .owl-carousel button.owl-dot {
       align-items: center; } }
 
 .button {
+  outline: none;
   border: none;
   border-radius: 10px;
   background-color: #fbd341;
@@ -577,12 +578,55 @@ header .owl-carousel button.owl-dot {
     border-bottom: 1px solid rgba(255, 255, 255, 0.4);
     outline: none;
     font-size: 14px; }
+    .offer__input_no-padding {
+      padding: 0; }
     .offer__input::placeholder {
       color: #e5e5e5;
       font-size: 14px; }
     @media (max-width: 992px) {
       .offer__input {
-        align-self: auto;
-        margin-bottom: 20px; } }
+        align-self: auto; } }
+  .offer_hidden {
+    display: none; }
+  .offer_hidden-input {
+    display: block;
+    height: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    opacity: 0; }
+  .offer__select-button {
+    position: relative;
+    user-select: none;
+    padding: 0 10px;
+    cursor: pointer;
+    height: 100%;
+    text-decoration: none;
+    font-weight: 100;
+    color: #e5e5e5;
+    font-size: 14px; }
+  .offer__drop-down {
+    user-select: none;
+    position: relative;
+    background: #f8f7f7;
+    margin: 0;
+    padding: 15px; }
+  .offer__link-style {
+    color: black;
+    font-weight: 100;
+    margin-bottom: 10px;
+    cursor: pointer; }
+    .offer__link-style:hover {
+      color: #fbd341; }
+  .offer__arrow-down {
+    border: solid #e5e5e5;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 4px;
+    right: 9px;
+    top: 2px;
+    position: absolute;
+    margin-bottom: 6px;
+    transform: rotate(45deg); }
 
 /*# sourceMappingURL=style.css.map */

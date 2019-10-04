@@ -299,32 +299,52 @@
 <section class="offer">
     <div class="container offer__wrap">
         <h1 class="offer__title">ХОЧУ ПРЕДЛОЖЕНИЕ ПО ТУРУ</h1>
-        <!--<div class="offer__form-wrap">-->
         <form class="offer__form" action="">
             <div class="offer__form-wrap">
-                <input class="offer__input" placeholder="Имя" type="text" name="fullname">
-                <input class="offer__input" placeholder="Email" type="email">
-                <input class="offer__input" placeholder="Телефон" type="tel">
-                <select class="offer__input" name="country" id="country">
-                    <option disabled selected>Страна тура</option>
-                    <option value="Turkey">Турция</option>
-                    <option value="Egypt">Египет</option>
-                    <option value="Sri-Lanka">Шри-Ланка</option>
-                    <option value="Dominican Republic">Доминикана</option>
-                </select>
+                <input class="offer__input" placeholder="Имя" type="text" name="fullname" required >
+                <input class="offer__input" placeholder="Email" name="email" type="email" required >
+                <input class="offer__input" placeholder="Телефон" type="tel" required pattern="\d{10}" >
+                <!--&lt;!&ndash;<select class="offer__input" name="country" id="country">&ndash;&gt;-->
+                <!--<option disabled selected>Страна тура</option>-->
+                <!--<option value="Turkey">Турция</option>-->
+                <!--<option value="Egypt">Египет</option>-->
+                <!--<option value="Sri-Lanka">Шри-Ланка</option>-->
+                <!--<option value="Dominican Republic">Доминикана</option>-->
+                <!--</select>-->
+
+
+                <div class="offer__input offer__input_no-padding">
+
+                    <div class="offer__select-button" id="div-drop-down">Страна тура <i class="offer__arrow-down"></i></div>
+                    <input type="text" id="input-drop-down" class="offer_hidden-input" name="coun_try" required >
+                    <!--offer_hidden-->
+                    <div class="offer__drop-down offer_hidden">
+                        <ul class="offer__drop-ul navigation">
+                            <li class="navigation__link offer__link-style">Турция</li>
+                            <li class="navigation__link offer__link-style">Египет</li>
+                            <li class="navigation__link offer__link-style">Шри-Ланка</li>
+                            <li class="navigation__link offer__link-style">Доминикана</li>
+                        </ul>
+                    </div>
+                </div>
+
+
                 <input class="button" type="submit" value="Получить предложение">
             </div>
 
         </form>
-        <!--</div>-->
 
     </div>
 
 </section>
+<footer class="footer">
+    
+</footer>
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/owlcarousel/owl.carousel.js"></script>
 <script src="js/header.js"></script>
 <script src="js/our-tours.js"></script>
+<script src="js/offer.js"></script>
 <script>
     $('.slider-1').owlCarousel({
         loop: true,
