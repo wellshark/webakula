@@ -8,6 +8,7 @@
   &__wrap
     @media (max-width: 992px)
       height: 100vh
+      position: relative
 
   //  display: flex
     //  flex-direction: column
@@ -15,8 +16,10 @@
   &__title
     color: #FFFFFF
     padding: 40px 0
-    //@media (max-width: 992px)
-    //  padding: 0
+    @media (max-width: 992px)
+      padding: 0
+      //position: absolute
+      //top: calc(100vh / 3
   &__form
     display: flex
     justify-content: space-between
@@ -24,14 +27,15 @@
     padding: 40px
     background-color: rgba(#000000, 0.6)
     @media (max-width: 992px)
+
       //height: calc(100% - 103px)
       flex-direction: column
-  &__form-wrap
-    @media (max-width: 992px)
-      height: calc(100% - 103px - 40px)
-      display: flex
-      flex-direction: column
-      justify-content: center
+  //&__form-wrap
+  //  @media (max-width: 992px)
+  //    height: calc(100% - 103px - 40px)
+  //    display: flex
+  //    flex-direction: column
+  //    justify-content: center
   &__input-wrap
     display: grid
     grid-gap: 20px 30px

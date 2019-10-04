@@ -526,10 +526,14 @@ header .owl-carousel button.owl-dot {
       padding: 0; } }
   @media (max-width: 992px) {
     .offer__wrap {
-      height: 100vh; } }
+      height: 100vh;
+      position: relative; } }
   .offer__title {
     color: #FFFFFF;
     padding: 40px 0; }
+    @media (max-width: 992px) {
+      .offer__title {
+        padding: 0; } }
   .offer__form {
     display: flex;
     justify-content: space-between;
@@ -539,12 +543,6 @@ header .owl-carousel button.owl-dot {
     @media (max-width: 992px) {
       .offer__form {
         flex-direction: column; } }
-  @media (max-width: 992px) {
-    .offer__form-wrap {
-      height: calc(100% - 103px - 40px);
-      display: flex;
-      flex-direction: column;
-      justify-content: center; } }
   .offer__input-wrap {
     display: grid;
     grid-gap: 20px 30px;
