@@ -3,12 +3,18 @@
   background-size: cover
   padding-bottom: 40px
   @media (max-width: 992px)
-    min-height: 100vh
+    height: 100vh
+    min-height: 400px
     padding: 0
   &__wrap
     @media (max-width: 992px)
       height: 100vh
+      min-height: 400px
       position: relative
+      display: flex
+      flex-direction: column
+      //justify-content: space-around
+
 
   //  display: flex
     //  flex-direction: column
@@ -18,16 +24,21 @@
     padding: 40px 0
     @media (max-width: 992px)
       padding: 0
-      //position: absolute
+      display: flex
+      align-items: center
+      height: 25vh
+      min-height: 75px
+  //position: absolute
       //top: calc(100vh / 3
   &__form
     display: flex
-    justify-content: space-between
+    //justify-content: space-between
     align-items: center
     padding: 40px
     background-color: rgba(#000000, 0.6)
     @media (max-width: 992px)
-
+      height: calc(50vh - 80px)
+      min-height: 200px
       //height: calc(100% - 103px)
       flex-direction: column
   //&__form-wrap
@@ -36,26 +47,33 @@
   //    display: flex
   //    flex-direction: column
   //    justify-content: center
-  &__input-wrap
+  &__form-wrap
     display: grid
     grid-gap: 20px 30px
-    grid-template-columns: repeat(4, minmax(100px, 1fr))
+    grid-template-columns: repeat(4, minmax(100px, 1fr)) 260px
+    align-self: center
     padding-right: 30px
     @media (max-width: 992px)
       display: flex
       flex-direction: column
-      margin-bottom: 20px
+      //margin-bottom: 20px
       padding-right: 0
+      justify-content: space-around
+      height: 100%
   &__input
     height: 25px
     padding: 0 10px
+    align-self: center
     background-color: rgba(0,0,0,0)
     color: #e5e5e5
     font-weight: 100
     border: none
     border-bottom: 1px solid rgba(255,255,255,0.4)
     outline: none
+    font-size: 14px
     &::placeholder
       color: #e5e5e5
+      font-size: 14px
     @media (max-width: 992px)
+      align-self: auto
       margin-bottom: 20px
