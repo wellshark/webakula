@@ -231,13 +231,15 @@ header .owl-carousel button.owl-dot {
       align-items: center;
       z-index: 1;
       border-radius: 0;
-      position: absolute;
       top: 0;
       background: #fbd341;
       left: 0;
       width: 100%;
-      min-height: calc(100vh - 80px);
-      transform: scale(0); } }
+      height: calc(100vh - 80px);
+      max-height: calc(100vh - 80px);
+      transform: scale(0);
+      overflow: auto;
+      position: fixed; } }
 
 .navbar-wrap {
   position: absolute;
