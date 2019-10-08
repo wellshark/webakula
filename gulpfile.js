@@ -66,7 +66,7 @@ gulp.task('image_min', function () {
 });
 
 gulp.task('minCSS', function () {
-    return gulp.src('app/css/*.css')
+    return gulp.src('app/css/**/*.css')
         .pipe(cleanCSS({compatibility: 'ie8'}))
         .pipe(autoprefixer({
             cascade: false

@@ -35,7 +35,9 @@ h1 {
   margin: 0; }
   @media (max-width: 576px) {
     h1 {
-      font-size: 20px; } }
+      font-size: 20px;
+      text-align: center;
+      justify-content: center; } }
 
 * {
   font-family: Arial;
@@ -376,6 +378,8 @@ header .owl-carousel button.owl-dot {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none; }
+    .our-tours__button:hover {
+      color: #fbd341; }
   .our-tours_disabled {
     display: none; }
   .our-tours__hot-tours, .our-tours__popular-tours {
@@ -628,5 +632,123 @@ header .owl-carousel button.owl-dot {
     position: absolute;
     margin-bottom: 6px;
     transform: rotate(45deg); }
+
+.footer {
+  background-color: #22334d;
+  padding: 60px 0 40px 0; }
+
+.footer-content {
+  display: grid;
+  grid-gap: 30px 3vw;
+  grid-template-columns: minmax(360px, 1fr) 130px 130px 260px;
+  grid-template-rows: repeat(auto-fit, 1fr); }
+  @media (max-width: 992px) {
+    .footer-content {
+      grid-template-columns: minmax(130px, 1fr) minmax(130px, 1fr) minmax(300px, 1fr);
+      grid-gap: 30px 80px; } }
+  @media (max-width: 768px) {
+    .footer-content {
+      grid-template-columns: repeat(2, minmax(120px, 1fr));
+      grid-gap: 20px 25px; } }
+  .footer-content__about-us {
+    max-width: 313px; }
+    @media (max-width: 992px) {
+      .footer-content__about-us {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: none;
+        grid-row: 2;
+        grid-column-start: 1;
+        grid-column-end: 4; }
+        .footer-content__about-us-text {
+          text-align: center; } }
+    @media (max-width: 768px) {
+      .footer-content__about-us {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row: 4; } }
+  .footer-content__about-us-text {
+    font-size: 14px;
+    margin: 0;
+    font-weight: 100;
+    color: #FFFFFF;
+    padding: 50px 0 40px;
+    position: relative; }
+    .footer-content__about-us-text:before, .footer-content__about-us-text:after {
+      content: "";
+      width: 100%;
+      height: 1px;
+      left: 0;
+      background-color: #f7f8f9;
+      opacity: 0.1;
+      position: absolute; }
+    .footer-content__about-us-text:before {
+      top: 25px; }
+    .footer-content__about-us-text:after {
+      bottom: 15px;
+      left: 0; }
+  .footer-content__dev-inf {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none; }
+    .footer-content__dev-inf-text {
+      color: #c2c2c2;
+      font-size: 14px;
+      font-weight: 100; }
+      .footer-content__dev-inf-text:hover {
+        color: #fbd341; }
+    .footer-content__dev-inf-logo {
+      margin-left: 4px; }
+  .footer-content__navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .footer-content__support {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .footer-content__navigation-text {
+    color: #ffffff;
+    font-size: 18px;
+    margin: 0;
+    margin-bottom: 40px; }
+  .footer-content__link {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 100; }
+    .footer-content__link:hover {
+      color: #fbd341; }
+  .footer-content__link-wrap {
+    margin-bottom: 10px; }
+  @media (max-width: 768px) {
+    .footer-content__contacts {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      grid-column-start: 1;
+      grid-column-end: 3; } }
+  .footer-content__contact-text {
+    color: rgba(243, 243, 243, 0.8);
+    font-weight: 100;
+    font-size: 14px; }
+  .footer-content__contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 17px; }
+  .footer-content_border-top {
+    padding-top: 20px;
+    border-top: 1px solid rgba(247, 248, 249, 0.1); }
+  .footer-content__number-link {
+    font-size: 14px;
+    color: rgba(243, 243, 243, 0.8);
+    font-weight: 100;
+    text-decoration: none; }
+    .footer-content__number-link:hover {
+      color: #fbd341; }
+  .footer-content__icon {
+    margin-left: 5px;
+    margin-right: 13px; }
 
 /*# sourceMappingURL=style.css.map */

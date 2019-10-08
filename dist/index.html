@@ -3,8 +3,445 @@
 <head>
     <meta charset="UTF-8">
     <title>Webakula</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/owlcarousel/owl.carousel.min.css">
+    <!--<link rel="stylesheet" href="css/owlcarousel/owl.theme.default.min.css">-->
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
+<header class="header">
+    <div class="owl-carousel slider-1 owl-theme">
+        <div class="item">
+            <div class="owl-carousel__item-1"></div>
+        </div>
+        <div class="item">
+            <div class="owl-carousel__item-2"></div>
+        </div>
+        <div class="item">
+            <div class="owl-carousel__item-3"></div>
+        </div>
+    </div>
+    <div class="navbar-wrap">
+        <div class="container">
+            <div class="logo">
+                <img src="img/logo.png" alt="logo">
+            </div>
+            <div class="contacts">
+                <div class="contacts__item">
+                    <img class="contacts__item-icon" src="img/location.png" alt="location">
+                    <span>г. Харьков, ул. Мироносицкая 10а</span>
+                </div>
+                <div class="contacts__item">
+                    <img class="contacts__item-icon" src="img/phone.png" alt="phone">
+                    <span class="contacts__number-span">
+                        <a href="tel:+380999908100" class="contacts__number-link">+38 (099) 990-81-00</a>  (viber, telegram)
+                    </span>
+                </div>
+                <div class="contacts__item">
+                    <a href="#" class="contacts__icon"><img src="img/fb_icon.png" alt="fb"></a>
+                </div>
+                <div class="contacts__item">
+                    <a href="#" class="contacts__icon"><img src="img/instagram_icon.png" alt="instagram"></a>
+                </div>
+            </div>
+            <div class="top-navbar">
 
+                <div class="menu-button" id="menu-button">
+                    <svg class="ham hamRotate ham4" viewBox="0 0 100 100" width="80"
+                         onclick="this.classList.toggle('active')">
+                        <path
+                                class="line top"
+                                d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20"/>
+                        <path
+                                class="line middle"
+                                d="m 70,50 h -40"/>
+                        <path
+                                class="line bottom"
+                                d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20"/>
+                    </svg>
+                </div>
+                <ul class="navigation header__nav" id="navigation">
+                    <li class="navigation__link-wrap header_link-margin "><a href="#"
+                                                                             class="navigation__link navigation_black-link">Главная</a>
+                    </li>
+                    <li class="navigation__link-wrap"><a href="#"
+                                                         class="navigation__link navigation_black-link">Туры <i
+                            class="navigation__arrow-down"></i></a>
+                        <!--<img class="navigation__arrow-down" src="img/angle-arrow-down.svg" width="10" height="10"-->
+                        <!--alt="arrow-down">-->
+                        <ul class="navigation__submenu navigation">
+
+
+                            <li class="navigation__sub-item"><a href="#" class="navigation__link navigation_white-link">Горящие
+                                туры</a></li>
+                            <li class="navigation__sub-item"><a href="#" class="navigation__link navigation_white-link">Поиск
+                                тура</a></li>
+                            <li class="navigation__sub-item"><a href="#" class="navigation__link navigation_white-link">Туры
+                                по Украине</a>
+                            </li>
+                            <li class="navigation__sub-item"><a href="#" class="navigation__link navigation_white-link">Экскурсионные
+                                туры</a>
+                            </li>
+                            <li class="navigation__sub-item"><a href="#" class="navigation__link navigation_white-link">Week
+                                end туры</a></li>
+                        </ul>
+                    </li>
+                    <li class="navigation__link-wrap"><a href="#"
+                                                         class="navigation__link navigation_black-link">Страны</a>
+                    </li>
+                    <li class="navigation__link-wrap"><a href="#"
+                                                         class="navigation__link navigation_black-link">Услуги <i
+                            class="navigation__arrow-down"></i></a>
+
+                        <!--<img class="navigation__arrow-down" src="img/angle-arrow-down.svg" width="10" height="10"-->
+                        <!--alt="arrow-down">-->
+                        <ul class="navigation__submenu navigation">
+                            <li class="navigation__sub-item"><a href="#" class="navigation__link navigation_white-link">Авиабилеты</a>
+                            </li>
+                            <li class="navigation__sub-item"><a href="#" class="navigation__link navigation_white-link">Визовая
+                                поддержка</a></li>
+                            <li class="navigation__sub-item"><a href="#" class="navigation__link navigation_white-link">Индивидуальный
+                                трансфер</a></li>
+                            <li class="navigation__sub-item"><a href="#" class="navigation__link navigation_white-link">Подарочные
+                                сертификаты</a></li>
+                            <li class="navigation__sub-item"><a href="#" class="navigation__link navigation_white-link">Бронирование
+                                отелей и апартаментов</a></li>
+                            <li class="navigation__sub-item"><a href="#" class="navigation__link navigation_white-link">Как
+                                забронировать и
+                                оплатить тур</a></li>
+                        </ul>
+                    </li>
+                    <li class="navigation__link-wrap"><a href="#" class="navigation__link navigation_black-link">О
+                        компании</a></li>
+                    <li class="navigation__link-wrap"><a href="#"
+                                                         class="navigation__link navigation_black-link">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- /.header-wrap -->
+    <div class="offer-wrap">
+        <div class="offer-background  offer-wrap__height">
+        </div>
+    </div>
+    <div class="offer-wrap">
+        <div class="container offer-wrap__height">
+            <div class="offer-wrap__info offer-wrap__height">
+                <h1 class="offer-wrap__text">Лучшие предложения по солнечному Египту из Харькова</h1>
+                <button class="button">Получить предложение</button>
+            </div>
+        </div>
+
+    </div>
+</header>
+
+<section class="our-tours">
+    <div class="container">
+        <span class="our-tours__button our-tours__button_active" id="hot-tours">Горящие туры</span>
+        <span class="our-tours__button" id="popular-tours">Популярные туры</span>
+    </div>
+
+    <div class="our-tours__hot-tours">
+        <div class="owl-carousel slider-2 owl-theme">
+            <div class="item">
+                <div class="item__img">
+                    <img src="img/tour_1.jpg" alt="tour_1" width="187" height="175">
+                </div>
+                <div class="item__info">
+                    <div class="item__title">
+                        <h2 class="item__title-text">8 марта в Cyrene Sharm hotel</h2>
+                        <span class="item__title-subtext">(12.03.2018 — 19.03.2018)</span>
+                    </div>
+                    <div class="item__description">
+                        <p class="item__description-text">Перелёт, питание по системе all inclusive, трансфер</p>
+                    </div>
+                    <div class="item__cost-description">
+                        <span class="item__price">1 259 грн</span>
+                        <span class="item__people">/за 1 человека</span>
+                    </div>
+                    <a href="#" class="item__button"><i
+                            class="item__arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item__img">
+                    <img src="img/tour_2.jpg" alt="tour_2" width="187" height="175">
+                </div>
+                <div class="item__info">
+                    <div class="item__title">
+                        <h2 class="item__title-text">8 марта в Cyrene Sharm hotel</h2>
+                        <span class="item__title-subtext">(12.03.2018 — 19.03.2018)</span>
+                    </div>
+                    <div class="item__description">
+                        <p class="item__description-text">Перелёт, питание по системе all inclusive, трансфер</p>
+                    </div>
+                    <div class="item__cost-description">
+                        <span class="item__price">1 259 грн</span>
+                        <span class="item__people">/за 1 человека</span>
+                    </div>
+                    <a href="#" class="item__button"><i
+                            class="item__arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item__img">
+                    <img src="img/tour_2.jpg" alt="tour_2" width="187" height="175">
+                </div>
+                <div class="item__info">
+                    <div class="item__title">
+                        <h2 class="item__title-text">8 марта в Cyrene Sharm hotel</h2>
+                        <span class="item__title-subtext">(12.03.2018 — 19.03.2018)</span>
+                    </div>
+                    <div class="item__description">
+                        <p class="item__description-text">Перелёт, питание по системе all inclusive, трансфер</p>
+                    </div>
+                    <div class="item__cost-description">
+                        <span class="item__price">1 259 грн</span>
+                        <span class="item__people">/за 1 человека</span>
+                    </div>
+                    <a href="#" class="item__button"><i
+                            class="item__arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="our-tours__popular-tours our-tours_disabled">
+        <div class="owl-carousel slider-2 owl-theme">
+            <div class="item">
+                <div class="item__img">
+                    <img src="img/tour_1.jpg" alt="tour_1" width="187" height="175">
+                </div>
+                <div class="item__info">
+                    <div class="item__title">
+                        <h2 class="item__title-text">8 марта в Cyrene Sharm hotel</h2>
+                        <span class="item__title-subtext">(12.03.2018 — 19.03.2018)</span>
+                    </div>
+                    <div class="item__description">
+                        <p class="item__description-text">Перелёт, питание по системе all inclusive, трансфер</p>
+                    </div>
+                    <div class="item__cost-description">
+                        <span class="item__price">1 259 грн</span>
+                        <span class="item__people">/за 1 человека</span>
+                    </div>
+                    <a href="#" class="item__button"><i
+                            class="item__arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item__img">
+                    <img src="img/tour_2.jpg" alt="tour_2" width="187" height="175">
+                </div>
+                <div class="item__info">
+                    <div class="item__title">
+                        <h2 class="item__title-text">8 марта в Cyrene Sharm hotel</h2>
+                        <span class="item__title-subtext">(12.03.2018 — 19.03.2018)</span>
+                    </div>
+                    <div class="item__description">
+                        <p class="item__description-text">Перелёт, питание по системе all inclusive, трансфер</p>
+                    </div>
+                    <div class="item__cost-description">
+                        <span class="item__price">1 259 грн</span>
+                        <span class="item__people">/за 1 человека</span>
+                    </div>
+                    <a href="#" class="item__button"><i
+                            class="item__arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item__img">
+                    <img src="img/tour_2.jpg" alt="tour_2" width="187" height="175">
+                </div>
+                <div class="item__info">
+                    <div class="item__title">
+                        <h2 class="item__title-text">8 марта в Cyrene Sharm hotel</h2>
+                        <span class="item__title-subtext">(12.03.2018 — 19.03.2018)</span>
+                    </div>
+                    <div class="item__description">
+                        <p class="item__description-text">Перелёт, питание по системе all inclusive, трансфер</p>
+                    </div>
+                    <div class="item__cost-description">
+                        <span class="item__price">1 259 грн</span>
+                        <span class="item__people">/за 1 человека</span>
+                    </div>
+                    <a href="#" class="item__button"><i
+                            class="item__arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="our-opportunities">
+    <div class="container">
+        <h1 class="our-opportunities__title">НАШИ ПРЕИМУЩЕСТВА</h1>
+        <div class="our-opportunities__content">
+            <div class="our-opportunities__img">
+
+            </div>
+            <!--<img class="our-opportunities__img" src="img/opportunities.jpg" alt="opportunities" width="458" height="316">-->
+            <div class="">
+                <p class="our-opportunities__description">Очень долго подбирали разные варианты для того, чтобы
+                    отпраздновать свой юбилейный День рождения в
+                    путешествии и не могли определиться... Решили обратиться за помощью в турагенство. Гульнара,
+                    выслушав
+                    все пожелания, предложила отдых в Турции, отель Justiniano Club Park Conti 5* в Окурджалар возле
+                    Аланьи.
+                    Мы очень благодарны ей за предложенный вариант!!!! Отдых получился отличный! Отель с большой
+                    ухоженной
+                    территорией, внимательный обслуживающий персонал. Отличный номер с видом на море. </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section class="offer">
+    <div class="container offer__wrap">
+        <h1 class="offer__title">ХОЧУ ПРЕДЛОЖЕНИЕ ПО ТУРУ</h1>
+        <form class="offer__form" action="">
+            <div class="offer__form-wrap">
+                <input class="offer__input" placeholder="Имя" type="text" name="fullname" required>
+                <input class="offer__input" placeholder="Email" name="email" type="email" required>
+                <input class="offer__input" placeholder="Телефон" type="tel" required pattern="\d{10}">
+                <!--&lt;!&ndash;<select class="offer__input" name="country" id="country">&ndash;&gt;-->
+                <!--<option disabled selected>Страна тура</option>-->
+                <!--<option value="Turkey">Турция</option>-->
+                <!--<option value="Egypt">Египет</option>-->
+                <!--<option value="Sri-Lanka">Шри-Ланка</option>-->
+                <!--<option value="Dominican Republic">Доминикана</option>-->
+                <!--</select>-->
+
+
+                <div class="offer__input offer__input_no-padding">
+
+                    <div class="offer__select-button" id="div-drop-down">Страна тура <i class="offer__arrow-down"></i>
+                    </div>
+                    <input type="text" id="input-drop-down" class="offer_hidden-input" name="coun_try" required>
+                    <!--offer_hidden-->
+                    <div class="offer__drop-down offer_hidden">
+                        <ul class="offer__drop-ul navigation">
+                            <li class="navigation__link offer__link-style">Турция</li>
+                            <li class="navigation__link offer__link-style">Египет</li>
+                            <li class="navigation__link offer__link-style">Шри-Ланка</li>
+                            <li class="navigation__link offer__link-style">Доминикана</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <input class="button" type="submit" value="Получить предложение">
+            </div>
+
+        </form>
+
+    </div>
+
+</section>
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-content__about-us">
+                <a href="#" class="footer-content__logo-link">
+                    <img src="img/footer_logo.png" alt="footer_logo" class="footer-content__logo">
+                </a>
+
+                <p class="footer-content__about-us-text">Кураж тур агенство,которое предоставляет услуги по поиску,
+                    оформлению и подбору туров для вас и ваших
+                    родных.</p>
+                <a class="footer-content__dev-inf" href="#">
+                    <span class="footer-content__dev-inf-text">
+                        Создание сайта —
+                    </span>
+                    <img src="img/WA-logo.png" alt="WA-logo" class="footer-content__dev-inf-logo">
+                </a>
+            </div>
+            <div class="footer-content__navigation">
+                <h2 class="footer-content__navigation-text">Навигация</h2>
+                <ul class="navigation">
+                    <li class="footer-content__link-wrap"><a href="#" class="navigation__link footer-content__link">Главная</a>
+                    </li>
+                    <li class="footer-content__link-wrap"><a href="#" class="navigation__link  footer-content__link">О
+                        компани</a>
+                    </li>
+                    <li class="footer-content__link-wrap"><a href="#" class="navigation__link  footer-content__link">Туры</a>
+                    </li>
+                    <li class="footer-content__link-wrap"><a href="#" class="navigation__link  footer-content__link">Контакты</a>
+                    </li>
+                    <li class="footer-content__link-wrap"><a href="#" class="navigation__link  footer-content__link">Услуги</a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="footer-content__support">
+                <h2 class="footer-content__navigation-text">Поддержка</h2>
+                <ul class="navigation">
+                    <li class="footer-content__link-wrap"><a href="#"
+                                                             class="navigation__link footer-content__link">FAQ</a>
+                    </li>
+                    <li class="footer-content__link-wrap"><a href="#" class="navigation__link  footer-content__link">Блог</a>
+                    </li>
+                    <li class="footer-content__link-wrap"><a href="#" class="navigation__link  footer-content__link">Обратная
+                        связь</a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="footer-content__contacts">
+                <h2 class="footer-content__navigation-text">Контакты</h2>
+                <div class="footer-content__contact-wrap">
+                    <div class="footer-content__contact-item">
+                        <img class="contacts__item-icon" src="img/location.png" alt="location">
+                        <span class="footer-content__contact-text">г. Харьков, ул. Мироносицкая 10а</span>
+                    </div>
+                    <div class="footer-content__contact-item">
+                        <img class="contacts__item-icon" src="img/phone.png" alt="phone">
+                        <span class="footer-content__contact-text">
+                        <a href="tel:+380999908100" class="footer-content__number-link">+38 (099) 990-81-00</a>  (viber, telegram)
+                    </span>
+                    </div>
+                    <div class="footer-content__contact-item footer-content_border-top">
+                        <a href="#" class="footer-content__icon"><img src="img/fb_icon.png" alt="fb"></a>
+                        <a href="#" class="footer-content__icon"><img src="img/instagram_icon.png" alt="instagram"></a>
+                    </div>
+                        <!--<div class="contacts__item">-->
+                            <!--<a href="#" class="contacts__icon"><img src="img/instagram_icon.png" alt="instagram"></a>-->
+                        <!--</div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="js/main.min.js"></script>
+<script>
+    $('.slider-1').owlCarousel({
+        loop: true,
+//        margin: 10,
+        nav: false,
+//        dots:false,
+        responsive: {
+            0: {
+                items: 1
+            }
+        }
+    });
+    $('.slider-2').owlCarousel({
+        loop: true,
+        margin: 70,
+//        stagePadding: 100,
+        nav: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            1200: {
+                items: 2
+            },
+            1700: {
+                items: 3
+            }
+        }
+    })
+</script>
 </body>
 </html>

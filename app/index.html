@@ -301,9 +301,9 @@
         <h1 class="offer__title">ХОЧУ ПРЕДЛОЖЕНИЕ ПО ТУРУ</h1>
         <form class="offer__form" action="">
             <div class="offer__form-wrap">
-                <input class="offer__input" placeholder="Имя" type="text" name="fullname" required >
-                <input class="offer__input" placeholder="Email" name="email" type="email" required >
-                <input class="offer__input" placeholder="Телефон" type="tel" required pattern="\d{10}" >
+                <input class="offer__input" placeholder="Имя" type="text" name="fullname" required>
+                <input class="offer__input" placeholder="Email" name="email" type="email" required>
+                <input class="offer__input" placeholder="Телефон" type="tel" required pattern="\d{10}">
                 <!--&lt;!&ndash;<select class="offer__input" name="country" id="country">&ndash;&gt;-->
                 <!--<option disabled selected>Страна тура</option>-->
                 <!--<option value="Turkey">Турция</option>-->
@@ -315,8 +315,9 @@
 
                 <div class="offer__input offer__input_no-padding">
 
-                    <div class="offer__select-button" id="div-drop-down">Страна тура <i class="offer__arrow-down"></i></div>
-                    <input type="text" id="input-drop-down" class="offer_hidden-input" name="coun_try" required >
+                    <div class="offer__select-button" id="div-drop-down">Страна тура <i class="offer__arrow-down"></i>
+                    </div>
+                    <input type="text" id="input-drop-down" class="offer_hidden-input" name="coun_try" required>
                     <!--offer_hidden-->
                     <div class="offer__drop-down offer_hidden">
                         <ul class="offer__drop-ul navigation">
@@ -338,13 +339,86 @@
 
 </section>
 <footer class="footer">
-    
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-content__about-us">
+                <a href="#" class="footer-content__logo-link">
+                    <img src="img/footer_logo.png" alt="footer_logo" class="footer-content__logo">
+                </a>
+
+                <p class="footer-content__about-us-text">Кураж тур агенство,которое предоставляет услуги по поиску,
+                    оформлению и подбору туров для вас и ваших
+                    родных.</p>
+                <a class="footer-content__dev-inf" href="#">
+                    <span class="footer-content__dev-inf-text">
+                        Создание сайта —
+                    </span>
+                    <img src="img/WA-logo.png" alt="WA-logo" class="footer-content__dev-inf-logo">
+                </a>
+            </div>
+            <div class="footer-content__navigation">
+                <h2 class="footer-content__navigation-text">Навигация</h2>
+                <ul class="navigation">
+                    <li class="footer-content__link-wrap"><a href="#" class="navigation__link footer-content__link">Главная</a>
+                    </li>
+                    <li class="footer-content__link-wrap"><a href="#" class="navigation__link  footer-content__link">О
+                        компани</a>
+                    </li>
+                    <li class="footer-content__link-wrap"><a href="#" class="navigation__link  footer-content__link">Туры</a>
+                    </li>
+                    <li class="footer-content__link-wrap"><a href="#" class="navigation__link  footer-content__link">Контакты</a>
+                    </li>
+                    <li class="footer-content__link-wrap"><a href="#" class="navigation__link  footer-content__link">Услуги</a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="footer-content__support">
+                <h2 class="footer-content__navigation-text">Поддержка</h2>
+                <ul class="navigation">
+                    <li class="footer-content__link-wrap"><a href="#"
+                                                             class="navigation__link footer-content__link">FAQ</a>
+                    </li>
+                    <li class="footer-content__link-wrap"><a href="#" class="navigation__link  footer-content__link">Блог</a>
+                    </li>
+                    <li class="footer-content__link-wrap"><a href="#" class="navigation__link  footer-content__link">Обратная
+                        связь</a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="footer-content__contacts">
+                <h2 class="footer-content__navigation-text">Контакты</h2>
+                <div class="footer-content__contact-wrap">
+                    <div class="footer-content__contact-item">
+                        <img class="contacts__item-icon" src="img/location.png" alt="location">
+                        <span class="footer-content__contact-text">г. Харьков, ул. Мироносицкая 10а</span>
+                    </div>
+                    <div class="footer-content__contact-item">
+                        <img class="contacts__item-icon" src="img/phone.png" alt="phone">
+                        <span class="footer-content__contact-text">
+                        <a href="tel:+380999908100" class="footer-content__number-link">+38 (099) 990-81-00</a>  (viber, telegram)
+                    </span>
+                    </div>
+                    <div class="footer-content__contact-item footer-content_border-top">
+                        <a href="#" class="footer-content__icon"><img src="img/fb_icon.png" alt="fb"></a>
+                        <a href="#" class="footer-content__icon"><img src="img/instagram_icon.png" alt="instagram"></a>
+                    </div>
+                        <!--<div class="contacts__item">-->
+                            <!--<a href="#" class="contacts__icon"><img src="img/instagram_icon.png" alt="instagram"></a>-->
+                        <!--</div>-->
+                </div>
+            </div>
+        </div>
+    </div>
 </footer>
+<!--build:js js/main.min.js -->
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/owlcarousel/owl.carousel.js"></script>
 <script src="js/header.js"></script>
 <script src="js/our-tours.js"></script>
 <script src="js/offer.js"></script>
+<!-- endbuild -->
 <script>
     $('.slider-1').owlCarousel({
         loop: true,
